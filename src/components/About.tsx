@@ -5,9 +5,9 @@ const About = () => {
   const stats = [
     {
       icon: Award,
-      number: '15+',
-      label: 'Years of Excellence',
-      description: 'Serving quality furniture since 2009'
+      number: '#1',
+      label: 'Top Furniture Brand',
+      description: 'Leading furniture brand in North East India'
     },
     {
       icon: Users,
@@ -36,12 +36,12 @@ const About = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-display font-semibold mb-6">
-              Crafting Modern Living Spaces Since 2009
+              Preferred Choice for Hotels, Resorts & Dream Homes
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              At Stilovo, we believe that furniture is more than just functional pieces—it's about 
-              creating an environment that reflects your personality and enhances your lifestyle. 
-              Our carefully curated collection combines contemporary design with exceptional craftsmanship.
+              At Stilovo, we are the top furniture brand in North East India, trusted by hotels, resorts, 
+              and homeowners who demand excellence. Our carefully curated collection combines contemporary 
+              design with exceptional craftsmanship, making us the preferred choice for creating stunning spaces.
             </p>
             
             <div className="space-y-4">

@@ -30,16 +30,10 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-brand-white text-brand-black hover:bg-brand-white/90 transition-smooth"
+              onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Collection
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black transition-smooth"
-            >
-              Visit Showroom
             </Button>
           </div>
         </div>

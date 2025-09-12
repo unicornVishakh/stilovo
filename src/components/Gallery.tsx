@@ -5,19 +5,23 @@ import heroImage from '@/assets/hero-living-room.jpg';
 import diningImage from '@/assets/dining-furniture.jpg';
 import bedroomImage from '@/assets/bedroom-furniture.jpg';
 import officeImage from '@/assets/office-furniture.jpg';
+import livingRoomImage from '@/assets/living-room-furniture.jpg';
+import hotelImage from '@/assets/hotel-furniture.jpg';
+import resortImage from '@/assets/resort-furniture.jpg';
+import dreamHomeImage from '@/assets/dream-home-furniture.jpg';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   
-  const categories = ['All', 'Living Room', 'Dining Room', 'Bedroom', 'Office'];
+  const categories = ['All', 'Living Room', 'Dining Room', 'Bedroom', 'Office', 'Hotels', 'Resorts', 'Dream Homes'];
   
   const galleryItems = [
     {
       id: 1,
-      image: heroImage,
-      title: 'Modern Living Space',
+      image: livingRoomImage,
+      title: 'Modern Living Collection',
       category: 'Living Room',
-      description: 'Sophisticated living room with contemporary furniture'
+      description: 'Contemporary living room furniture with elegant design'
     },
     {
       id: 2,
@@ -39,6 +43,34 @@ const Gallery = () => {
       title: 'Professional Workspace',
       category: 'Office',
       description: 'Modern office setup for productivity'
+    },
+    {
+      id: 5,
+      image: hotelImage,
+      title: 'Hotel Furniture Collection',
+      category: 'Hotels',
+      description: 'Premium furniture solutions for hospitality industry'
+    },
+    {
+      id: 6,
+      image: resortImage,
+      title: 'Resort Furniture Suite',
+      category: 'Resorts',
+      description: 'Luxury resort furniture for relaxation and comfort'
+    },
+    {
+      id: 7,
+      image: dreamHomeImage,
+      title: 'Dream Home Collection',
+      category: 'Dream Homes',
+      description: 'Complete home furniture solutions for modern living'
+    },
+    {
+      id: 8,
+      image: heroImage,
+      title: 'Sophisticated Living Space',
+      category: 'Living Room',
+      description: 'Modern living room with contemporary furniture'
     }
   ];
 

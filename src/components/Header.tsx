@@ -48,7 +48,7 @@ const Header = () => {
                 <span>96096 46000</span>
               </div>
             </div>
-            <Button variant="default" size="sm">
+            <Button variant="default" size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Visit Showroom
             </Button>
           </div>
@@ -86,7 +86,7 @@ const Header = () => {
                 <Phone className="h-4 w-4" />
                 <span>96096 46000</span>
               </div>
-              <Button variant="default" size="sm" className="w-full">
+              <Button variant="default" size="sm" className="w-full" onClick={() => { setIsMenuOpen(false); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 Visit Showroom
               </Button>
             </div>
