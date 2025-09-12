@@ -159,12 +159,6 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* View More Button */}
-        <div className="text-center mt-12">
-          <Button size="lg" variant="outline">
-            View More Designs
-          </Button>
-        </div>
       </div>
     </section>
   );

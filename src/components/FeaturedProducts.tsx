@@ -150,7 +150,7 @@ const FeaturedProducts = () => {
           </Button>
         </div>
 
-        <div className="text-center">
+        <div className="text-center mt-12">
           <Button size="lg" variant="default" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}>
             View All Products
             <ArrowRight className="ml-2 h-5 w-5" />

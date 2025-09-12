@@ -48,6 +48,14 @@ const Header = () => {
                 <span>96096 46000</span>
               </div>
             </div>
+            <a 
+              href="https://wa.me/919609646000"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-green-600 hover:text-green-700 transition-fast"
+            >
+              WhatsApp
+            </a>
             <Button variant="default" size="sm" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Visit Showroom
             </Button>
