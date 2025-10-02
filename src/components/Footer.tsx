@@ -84,10 +84,10 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-brand-accent mt-0.5 flex-shrink-0" />
                 <div className="text-brand-white/80 text-sm leading-relaxed">
-                  Sevoke Road, 2nd Floor<br />
-                  Tata Motors Rangeet Auto<br />
-                  Near Vega Mall<br />
-                  Siliguri 734008
+                  Stilovo Modern Furniture<br />
+                  Orchid Building<br />
+                  Near Vega Circle Mall<br />
+                  Siliguri
                 </div>
               </div>
               
