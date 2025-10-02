@@ -45,37 +45,40 @@ import furnishing3 from '@/assets/furnishing-3.jpg';
 import furnishing4 from '@/assets/furnishing-4.jpg';
 import furnishing5 from '@/assets/furnishing-5.jpg';
 import furnishing6 from '@/assets/furnishing-6.jpg';
+import sofa4 from '@/assets/sofa-4.jpg';
+import sofa5 from '@/assets/sofa-5.jpg';
+import sofa6 from '@/assets/sofa-6.jpg';
+import dining4 from '@/assets/dining-4.jpg';
+import dining5 from '@/assets/dining-5.jpg';
+import dining6 from '@/assets/dining-6.jpg';
+import decor4 from '@/assets/decor-4.jpg';
+import decor5 from '@/assets/decor-5.jpg';
+import decor6 from '@/assets/decor-6.jpg';
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('Sectional Sofas');
 
-  const categories = ['Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality' },
-    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space' },
-    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort' },
-    { image: dining1, title: '6 Seater Dining Set', category: 'Sectional Sofas', description: 'Perfect for gatherings' },
-    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance' },
-    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort' },
     { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space' },
     { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms' },
     { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style' },
-    { image: decor1, title: 'Lounge Chair', category: 'Sofas & Seating', description: 'Sophisticated seating' },
-    { image: decor2, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece' },
-    { image: decor3, title: 'Wing Chair', category: 'Sofas & Seating', description: 'Classic elegance' },
+    { image: sofa4, title: '2 Seater Loveseat', category: 'Sofas & Seating', description: 'Compact modern design' },
+    { image: sofa5, title: 'Curved Modern Sofa', category: 'Sofas & Seating', description: 'Contemporary elegance' },
+    { image: sofa6, title: 'Chesterfield Sofa', category: 'Sofas & Seating', description: 'Luxury velvet upholstery' },
     { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings' },
     { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary elegance' },
     { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Entertain in style' },
-    { image: sofa1, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining' },
-    { image: sofa2, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining' },
-    { image: sofa3, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty' },
+    { image: dining4, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining for cozy spaces' },
+    { image: dining5, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining with premium finish' },
+    { image: dining6, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty with crafted excellence' },
     { image: decor1, title: 'Wall Art', category: 'Home Decor', description: 'Transform your walls' },
     { image: decor2, title: 'Decorative Vases', category: 'Home Decor', description: 'Add charm to any space' },
     { image: decor3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Reflect your style' },
-    { image: rug1, title: 'Decorative Lights', category: 'Home Decor', description: 'Illuminate with style' },
-    { image: rug2, title: 'Cushion Sets', category: 'Home Decor', description: 'Comfort and color' },
-    { image: rug3, title: 'Photo Frames', category: 'Home Decor', description: 'Cherish memories' },
+    { image: decor4, title: 'Abstract Wall Art', category: 'Home Decor', description: 'Modern canvas art for elegance' },
+    { image: decor5, title: 'Photo Frame Set', category: 'Home Decor', description: 'Display memories in style' },
+    { image: decor6, title: 'Luxury Cushion Sets', category: 'Home Decor', description: 'Comfort and color coordination' },
     { image: rug1, title: 'Floral Rug', category: 'Rugs & Carpets', description: 'Beautiful hand-tufted design' },
     { image: rug2, title: 'Contemporary Rug', category: 'Rugs & Carpets', description: 'Modern patterns and colors' },
     { image: rug3, title: 'Abstract Rug', category: 'Rugs & Carpets', description: 'Artistic expression for floors' },

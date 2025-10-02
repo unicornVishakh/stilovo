@@ -50,37 +50,40 @@ import furnishing3 from '@/assets/furnishing-3.jpg';
 import furnishing4 from '@/assets/furnishing-4.jpg';
 import furnishing5 from '@/assets/furnishing-5.jpg';
 import furnishing6 from '@/assets/furnishing-6.jpg';
+import sofa4 from '@/assets/sofa-4.jpg';
+import sofa5 from '@/assets/sofa-5.jpg';
+import sofa6 from '@/assets/sofa-6.jpg';
+import dining4 from '@/assets/dining-4.jpg';
+import dining5 from '@/assets/dining-5.jpg';
+import dining6 from '@/assets/dining-6.jpg';
+import decor4 from '@/assets/decor-4.jpg';
+import decor5 from '@/assets/decor-5.jpg';
+import decor6 from '@/assets/decor-6.jpg';
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['All', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality with premium upholstery' },
-    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space with elegant comfort' },
-    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort with flexible arrangement' },
-    { image: dining1, title: '6 Seater Sectional', category: 'Sectional Sofas', description: 'Perfect for large gatherings and entertainment' },
-    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance for modern homes' },
-    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort with timeless design' },
     { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space with premium upholstery' },
     { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms with modern design' },
     { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style with adjustable positions' },
-    { image: decor1, title: 'Lounge Chair', category: 'Sofas & Seating', description: 'Sophisticated seating for relaxation' },
-    { image: decor2, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece for any room' },
-    { image: decor3, title: 'Wing Chair', category: 'Sofas & Seating', description: 'Classic elegance with ergonomic support' },
+    { image: sofa4, title: '2 Seater Loveseat', category: 'Sofas & Seating', description: 'Compact modern design with clean lines' },
+    { image: sofa5, title: 'Curved Modern Sofa', category: 'Sofas & Seating', description: 'Contemporary elegance with button tufting' },
+    { image: sofa6, title: 'Chesterfield Sofa', category: 'Sofas & Seating', description: 'Luxury velvet upholstery with rolled arms' },
     { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings with seating for 6' },
     { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary elegance with durable materials' },
     { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Entertain in style with spacious seating' },
-    { image: sofa1, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining for cozy spaces' },
-    { image: sofa2, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining with premium finish' },
-    { image: sofa3, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty with crafted excellence' },
+    { image: dining4, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining for cozy spaces with modern design' },
+    { image: dining5, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining with premium marble finish and gold legs' },
+    { image: dining6, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty with crafted oak excellence' },
     { image: decor1, title: 'Wall Art', category: 'Home Decor', description: 'Transform your walls with artistic metal designs' },
     { image: decor2, title: 'Decorative Vases', category: 'Home Decor', description: 'Add charm to any space with ceramic elegance' },
     { image: decor3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Reflect your style with gold-finished frames' },
-    { image: rug1, title: 'Decorative Lights', category: 'Home Decor', description: 'Illuminate with style and sophistication' },
-    { image: rug2, title: 'Cushion Sets', category: 'Home Decor', description: 'Comfort and color for every room' },
-    { image: rug3, title: 'Photo Frames', category: 'Home Decor', description: 'Cherish memories with elegant display' },
+    { image: decor4, title: 'Abstract Wall Art', category: 'Home Decor', description: 'Modern canvas art with gold and navy geometric patterns' },
+    { image: decor5, title: 'Photo Frame Set', category: 'Home Decor', description: 'Display cherished memories in elegant gold and silver frames' },
+    { image: decor6, title: 'Luxury Cushion Sets', category: 'Home Decor', description: 'Premium throw pillows with coordinating textures and colors' },
     { image: rug1, title: 'Floral Hand-Tufted Rug', category: 'Rugs & Carpets', description: 'Beautiful traditional design with vibrant colors' },
     { image: rug2, title: 'Contemporary Floral Rug', category: 'Rugs & Carpets', description: 'Modern patterns with warm color palette' },
     { image: rug3, title: 'Abstract Wave Rug', category: 'Rugs & Carpets', description: 'Artistic expression with flowing patterns' },
