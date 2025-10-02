@@ -2,6 +2,7 @@ import { ArrowRight, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
 import { useCallback, useEffect, useState } from 'react';
 import diningImage from '@/assets/dining-furniture.jpg';
 import bedroomImage from '@/assets/bedroom-furniture.jpg';
@@ -9,11 +10,15 @@ import officeImage from '@/assets/office-furniture.jpg';
 import livingRoomImage from '@/assets/living-room-furniture.jpg';
 
 const FeaturedProducts = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ 
-    align: 'start',
-    slidesToScroll: 1,
-    containScroll: 'trimSnaps'
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { 
+      align: 'start',
+      slidesToScroll: 1,
+      containScroll: 'trimSnaps',
+      loop: true
+    },
+    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+  );
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
 
