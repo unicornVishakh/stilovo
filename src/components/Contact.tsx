@@ -42,7 +42,7 @@ const Contact = () => {
   const onSubmit = (data: FormData) => {
     const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(data.name)}%0A*Phone:* ${encodeURIComponent(data.phone)}%0A*Email:* ${encodeURIComponent(data.email)}%0A*Subject:* ${encodeURIComponent(data.subject)}%0A%0A*Message:*%0A${encodeURIComponent(data.message)}`;
     
-    const whatsappUrl = `https://wa.me/918653450123?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/919609646000?text=${whatsappMessage}`;
     
     window.open(whatsappUrl, '_blank');
     
