@@ -14,7 +14,9 @@ const FeaturedProducts = () => {
     { 
       align: 'start',
       slidesToScroll: 1,
-      loop: true
+      loop: true,
+      containScroll: 'trimSnaps',
+      skipSnaps: false
     },
     [Autoplay({ delay: 2000, stopOnInteraction: false })]
   );
