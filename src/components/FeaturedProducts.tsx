@@ -93,9 +93,9 @@ const FeaturedProducts = () => {
 
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex -ml-6">
               {products.map((product) => (
-                <div key={product.id} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0">
+                <div key={product.id} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 pl-6">
                   <Card className="group overflow-hidden shadow-elegant hover:shadow-xl transition-smooth h-full">
                     <div className="relative overflow-hidden">
                       <img
