@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from './ui/button';
 import sofa1 from '@/assets/sofa-1.jpg';
 import sofa2 from '@/assets/sofa-2.jpg';
@@ -56,6 +57,7 @@ import decor5 from '@/assets/decor-5.jpg';
 import decor6 from '@/assets/decor-6.jpg';
 
 const Products = () => {
+  const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('Sofas & Seating');
 
   const categories = ['Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
@@ -180,12 +182,7 @@ const Products = () => {
         <div className="text-center mt-12">
           <Button 
             size="lg"
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              setTimeout(() => {
-                window.location.href = '/products';
-              }, 300);
-            }}
+            onClick={() => navigate('/products')}
           >
             View All Products
           </Button>
