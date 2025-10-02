@@ -134,9 +134,12 @@ const Gallery = () => {
                       size="sm"
                       variant="outline"
                       className="border-brand-white text-brand-white hover:bg-brand-white hover:text-brand-black"
+                      asChild
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      View Details
+                      <a href="https://wa.me/919609646000" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Inquire Now
+                      </a>
                     </Button>
                     <Button
                       size="sm"
