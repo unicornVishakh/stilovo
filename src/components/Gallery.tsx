@@ -83,7 +83,7 @@ const Gallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-semibold mb-6">
-            Furniture Gallery
+            Spaces transformed by Stilovo
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Explore our stunning collection of modern furniture across different categories.
