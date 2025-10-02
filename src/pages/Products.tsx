@@ -54,27 +54,33 @@ import furnishing6 from '@/assets/furnishing-6.jpg';
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['All', 'Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa1, title: 'Recliner Sofa', category: 'Sofas & Seating', description: 'Ultimate relaxation with adjustable comfort and leather upholstery' },
-    { image: sofa2, title: '5 Seater Sofa', category: 'Sofas & Seating', description: 'Spacious modern seating for the whole family' },
-    { image: sofa3, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect balance of style and comfort in velvet finish' },
-    { image: decor1, title: 'Convertible Sofa Bed', category: 'Sofas & Seating', description: 'Versatile design transforms from sofa to bed effortlessly' },
-    { image: decor2, title: 'L-Shaped Sectional', category: 'Sofas & Seating', description: 'Modern corner seating solution with chaise lounge' },
-    { image: decor3, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece in emerald velvet with gold accents' },
-    { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings with natural wood finish' },
-    { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary marble top with modern metal frame' },
-    { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Grand extendable table in rich walnut finish' },
-    { image: dining1, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural elegance with comfortable upholstered chairs' },
-    { image: dining2, title: 'Modern Dining Table', category: 'Dining Tables', description: 'Sleek design combining marble and metal' },
-    { image: dining3, title: 'Extendable Dining Set', category: 'Dining Tables', description: 'Flexible seating from 6 to 8 guests' },
-    { image: rug1, title: 'Metal Wall Art', category: 'Home Decor', description: 'Contemporary geometric sculpture in gold and black finish' },
-    { image: rug2, title: 'Decorative Vases', category: 'Home Decor', description: 'Elegant ceramic collection in white and gold tones' },
-    { image: rug3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Baroque-style gold-framed statement piece' },
-    { image: rug1, title: 'Abstract Wall Decor', category: 'Home Decor', description: 'Modern metal art for sophisticated interiors' },
-    { image: rug2, title: 'Vase Collection', category: 'Home Decor', description: 'Luxury ceramic pieces for contemporary homes' },
-    { image: rug3, title: 'Decorative Mirror', category: 'Home Decor', description: 'Ornate framing adds elegance to any wall' },
+    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality with premium upholstery' },
+    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space with elegant comfort' },
+    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort with flexible arrangement' },
+    { image: dining1, title: '6 Seater Sectional', category: 'Sectional Sofas', description: 'Perfect for large gatherings and entertainment' },
+    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance for modern homes' },
+    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort with timeless design' },
+    { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space with premium upholstery' },
+    { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms with modern design' },
+    { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style with adjustable positions' },
+    { image: decor1, title: 'Lounge Chair', category: 'Sofas & Seating', description: 'Sophisticated seating for relaxation' },
+    { image: decor2, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece for any room' },
+    { image: decor3, title: 'Wing Chair', category: 'Sofas & Seating', description: 'Classic elegance with ergonomic support' },
+    { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings with seating for 6' },
+    { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary elegance with durable materials' },
+    { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Entertain in style with spacious seating' },
+    { image: sofa1, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining for cozy spaces' },
+    { image: sofa2, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining with premium finish' },
+    { image: sofa3, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty with crafted excellence' },
+    { image: decor1, title: 'Wall Art', category: 'Home Decor', description: 'Transform your walls with artistic metal designs' },
+    { image: decor2, title: 'Decorative Vases', category: 'Home Decor', description: 'Add charm to any space with ceramic elegance' },
+    { image: decor3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Reflect your style with gold-finished frames' },
+    { image: rug1, title: 'Decorative Lights', category: 'Home Decor', description: 'Illuminate with style and sophistication' },
+    { image: rug2, title: 'Cushion Sets', category: 'Home Decor', description: 'Comfort and color for every room' },
+    { image: rug3, title: 'Photo Frames', category: 'Home Decor', description: 'Cherish memories with elegant display' },
     { image: rug1, title: 'Floral Hand-Tufted Rug', category: 'Rugs & Carpets', description: 'Beautiful traditional design with vibrant colors' },
     { image: rug2, title: 'Contemporary Floral Rug', category: 'Rugs & Carpets', description: 'Modern patterns with warm color palette' },
     { image: rug3, title: 'Abstract Wave Rug', category: 'Rugs & Carpets', description: 'Artistic expression with flowing patterns' },
@@ -165,15 +171,27 @@ const Products = () => {
                     </span>
                     <h3 className="text-xl font-bold mb-2">{product.title}</h3>
                     <p className="text-sm text-gray-200 mb-4">{product.description}</p>
-                    <Button 
-                      variant="secondary" 
-                      size="sm"
-                      onClick={() => {
-                        window.open('https://wa.me/919609646000', '_blank');
-                      }}
-                    >
-                      Inquire Now
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button 
+                        variant="secondary" 
+                        size="sm"
+                        onClick={() => {
+                          window.location.href = '/#contact';
+                        }}
+                      >
+                        Inquire Now
+                      </Button>
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+                        onClick={() => {
+                          window.open('https://wa.me/919609646000', '_blank');
+                        }}
+                      >
+                        WhatsApp
+                      </Button>
+                    </div>
                   </div>
                 </div>
                 <div className="p-4">

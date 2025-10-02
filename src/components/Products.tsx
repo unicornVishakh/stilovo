@@ -49,27 +49,33 @@ import furnishing6 from '@/assets/furnishing-6.jpg';
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('Sectional Sofas');
 
-  const categories = ['Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa1, title: 'Recliner Sofa', category: 'Sofas & Seating', description: 'Ultimate relaxation with adjustable comfort' },
-    { image: sofa2, title: '5 Seater Sofa', category: 'Sofas & Seating', description: 'Spacious seating for the whole family' },
-    { image: sofa3, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect balance of style and comfort' },
-    { image: decor1, title: 'Convertible Sofa Bed', category: 'Sofas & Seating', description: 'Versatile design for guests and daily use' },
-    { image: decor2, title: 'L-Shaped Sectional', category: 'Sofas & Seating', description: 'Modern corner seating solution' },
-    { image: decor3, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece for elegant spaces' },
-    { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings with wooden elegance' },
-    { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary marble top design' },
-    { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Grand dining for entertaining in style' },
-    { image: dining1, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural walnut finish with comfort seating' },
-    { image: dining2, title: 'Modern Dining Table', category: 'Dining Tables', description: 'Sleek design with premium materials' },
-    { image: dining3, title: 'Extendable Dining Set', category: 'Dining Tables', description: 'Flexible seating for any occasion' },
-    { image: rug1, title: 'Metal Wall Art', category: 'Home Decor', description: 'Contemporary sculpture for modern spaces' },
-    { image: rug2, title: 'Decorative Vases', category: 'Home Decor', description: 'Elegant ceramic pieces in gold and white' },
-    { image: rug3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Gold-framed baroque style statement piece' },
-    { image: rug1, title: 'Abstract Wall Decor', category: 'Home Decor', description: 'Artistic metal designs for luxury interiors' },
-    { image: rug2, title: 'Vase Collection', category: 'Home Decor', description: 'Add sophistication to any room' },
-    { image: rug3, title: 'Decorative Mirror', category: 'Home Decor', description: 'Reflect elegance with ornate frames' },
+    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality' },
+    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space' },
+    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort' },
+    { image: dining1, title: '6 Seater Dining Set', category: 'Sectional Sofas', description: 'Perfect for gatherings' },
+    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance' },
+    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort' },
+    { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space' },
+    { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms' },
+    { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style' },
+    { image: decor1, title: 'Lounge Chair', category: 'Sofas & Seating', description: 'Sophisticated seating' },
+    { image: decor2, title: 'Accent Chair', category: 'Sofas & Seating', description: 'Statement piece' },
+    { image: decor3, title: 'Wing Chair', category: 'Sofas & Seating', description: 'Classic elegance' },
+    { image: dining1, title: '6 Seater Dining Set', category: 'Dining Tables', description: 'Perfect for family gatherings' },
+    { image: dining2, title: '4 Seater Dining Table', category: 'Dining Tables', description: 'Contemporary elegance' },
+    { image: dining3, title: '8 Seater Dining Set', category: 'Dining Tables', description: 'Entertain in style' },
+    { image: sofa1, title: '2 Seater Dining Table', category: 'Dining Tables', description: 'Intimate dining' },
+    { image: sofa2, title: 'Marble Top Dining Table', category: 'Dining Tables', description: 'Luxury dining' },
+    { image: sofa3, title: 'Wooden Dining Set', category: 'Dining Tables', description: 'Natural beauty' },
+    { image: decor1, title: 'Wall Art', category: 'Home Decor', description: 'Transform your walls' },
+    { image: decor2, title: 'Decorative Vases', category: 'Home Decor', description: 'Add charm to any space' },
+    { image: decor3, title: 'Ornate Mirror', category: 'Home Decor', description: 'Reflect your style' },
+    { image: rug1, title: 'Decorative Lights', category: 'Home Decor', description: 'Illuminate with style' },
+    { image: rug2, title: 'Cushion Sets', category: 'Home Decor', description: 'Comfort and color' },
+    { image: rug3, title: 'Photo Frames', category: 'Home Decor', description: 'Cherish memories' },
     { image: rug1, title: 'Floral Rug', category: 'Rugs & Carpets', description: 'Beautiful hand-tufted design' },
     { image: rug2, title: 'Contemporary Rug', category: 'Rugs & Carpets', description: 'Modern patterns and colors' },
     { image: rug3, title: 'Abstract Rug', category: 'Rugs & Carpets', description: 'Artistic expression for floors' },
@@ -154,7 +160,8 @@ const Products = () => {
                     variant="secondary" 
                     size="sm"
                     onClick={() => {
-                      window.open('https://wa.me/919609646000', '_blank');
+                      const contact = document.getElementById('contact');
+                      contact?.scrollIntoView({ behavior: 'smooth' });
                     }}
                   >
                     Inquire Now
