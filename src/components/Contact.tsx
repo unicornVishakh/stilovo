@@ -230,7 +230,7 @@ const Contact = () => {
           <Card className="shadow-elegant overflow-hidden">
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.3!2d88.4!3d26.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQzJzEyLjAiTiA4OMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin&q=Orchid+Building+Sevoke+Road+Near+Vega+Circle+Mall+Siliguri"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.013438465789!2d88.41377911513699!3d26.72660158318845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e441f383c99a99%3A0xf4f314ac6fc6f3f7!2sOrchid%20Building%20Sevoke%20Road%2C%20Siliguri%2C%20West%20Bengal%20734001!5e0!3m2!1sen!2sin!4v1696250332486!5m2!1sen!2sin"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
