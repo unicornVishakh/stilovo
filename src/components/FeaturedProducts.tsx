@@ -14,10 +14,9 @@ const FeaturedProducts = () => {
     { 
       align: 'start',
       slidesToScroll: 1,
-      containScroll: 'trimSnaps',
       loop: true
     },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+    [Autoplay({ delay: 2000, stopOnInteraction: false })]
   );
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
