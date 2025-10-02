@@ -159,10 +159,7 @@ const Products = () => {
                   <Button 
                     variant="secondary" 
                     size="sm"
-                    onClick={() => {
-                      const contact = document.getElementById('contact');
-                      contact?.scrollIntoView({ behavior: 'smooth' });
-                    }}
+                    onClick={() => window.open('https://wa.me/919609646000', '_blank')}
                   >
                     Inquire Now
                   </Button>

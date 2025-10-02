@@ -118,8 +118,12 @@ const FeaturedProducts = () => {
                       </p>
                       
                       <div className="flex justify-center">
-                        <Button variant="outline" size="sm">
-                          View Details
+                        <Button 
+                          variant="outline" 
+                          size="sm"
+                          onClick={() => window.open('https://wa.me/919609646000', '_blank')}
+                        >
+                          Inquire Now
                         </Button>
                       </div>
                     </CardContent>
@@ -150,12 +154,6 @@ const FeaturedProducts = () => {
           </Button>
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" variant="default" onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}>
-            View All Products
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </div>
       </div>
     </section>
   );

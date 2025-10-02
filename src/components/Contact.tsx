@@ -30,7 +30,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  SevokeRoad, 2nd Floor<br />
+                  Sevoke Road, 2nd Floor<br />
                   Tata Motors Rangeet Auto<br />
                   Near Vega Mall<br />
                   Siliguri 734008, West Bengal
