@@ -54,15 +54,9 @@ import furnishing6 from '@/assets/furnishing-6.jpg';
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['All', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality with premium upholstery' },
-    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space with elegant comfort' },
-    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort with flexible arrangement' },
-    { image: dining1, title: '6 Seater Sectional', category: 'Sectional Sofas', description: 'Perfect for large gatherings and entertainment' },
-    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance for modern homes' },
-    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort with timeless design' },
     { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space with premium upholstery' },
     { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms with modern design' },
     { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style with adjustable positions' },
@@ -171,27 +165,15 @@ const Products = () => {
                     </span>
                     <h3 className="text-xl font-bold mb-2">{product.title}</h3>
                     <p className="text-sm text-gray-200 mb-4">{product.description}</p>
-                    <div className="flex gap-2">
-                      <Button 
-                        variant="secondary" 
-                        size="sm"
-                        onClick={() => {
-                          window.location.href = '/#contact';
-                        }}
-                      >
-                        Inquire Now
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-                        onClick={() => {
-                          window.open('https://wa.me/919609646000', '_blank');
-                        }}
-                      >
-                        WhatsApp
-                      </Button>
-                    </div>
+                    <Button 
+                      variant="secondary" 
+                      size="sm"
+                      onClick={() => {
+                        window.open('https://wa.me/919609646000', '_blank');
+                      }}
+                    >
+                      Inquire Now
+                    </Button>
                   </div>
                 </div>
                 <div className="p-4">

@@ -49,15 +49,9 @@ import furnishing6 from '@/assets/furnishing-6.jpg';
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('Sectional Sofas');
 
-  const categories = ['Sectional Sofas', 'Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
+  const categories = ['Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
   const products = [
-    { image: sofa2, title: 'L-Shaped Sectional', category: 'Sectional Sofas', description: 'Modern design meets functionality' },
-    { image: sofa3, title: 'Corner Sectional', category: 'Sectional Sofas', description: 'Maximize your space' },
-    { image: sofa1, title: 'Modular Sectional', category: 'Sectional Sofas', description: 'Customize your comfort' },
-    { image: dining1, title: '6 Seater Dining Set', category: 'Sectional Sofas', description: 'Perfect for gatherings' },
-    { image: dining2, title: 'RHS Sectional Sofa', category: 'Sectional Sofas', description: 'Contemporary elegance' },
-    { image: dining3, title: 'LHS Sectional Sofa', category: 'Sectional Sofas', description: 'Spacious comfort' },
     { image: sofa1, title: 'Luxury Sofa Set', category: 'Sofas & Seating', description: 'Elegant comfort for your living space' },
     { image: sofa2, title: '3 Seater Sofa', category: 'Sofas & Seating', description: 'Perfect for family rooms' },
     { image: sofa3, title: 'Classic Recliner', category: 'Sofas & Seating', description: 'Timeless comfort and style' },
@@ -160,8 +154,7 @@ const Products = () => {
                     variant="secondary" 
                     size="sm"
                     onClick={() => {
-                      const contact = document.getElementById('contact');
-                      contact?.scrollIntoView({ behavior: 'smooth' });
+                      window.open('https://wa.me/919609646000', '_blank');
                     }}
                   >
                     Inquire Now
