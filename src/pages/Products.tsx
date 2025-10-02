@@ -174,27 +174,13 @@ const Products = () => {
                     </span>
                     <h3 className="text-xl font-bold mb-2">{product.title}</h3>
                     <p className="text-sm text-gray-200 mb-4">{product.description}</p>
-                    <div className="flex gap-2">
-                      <Button 
-                        variant="secondary" 
-                        size="sm"
-                        onClick={() => {
-                          window.location.href = '/#contact';
-                        }}
-                      >
-                        Inquire Now
-                      </Button>
-                      <Button 
-                        variant="outline" 
-                        size="sm"
-                        className="bg-white/10 border-white/20 text-white hover:bg-white/20"
-                        onClick={() => {
-                          window.open('https://wa.me/919609646000', '_blank');
-                        }}
-                      >
-                        WhatsApp
-                      </Button>
-                    </div>
+                    <Button 
+                      variant="secondary" 
+                      size="sm"
+                      onClick={() => window.open('https://wa.me/919609646000', '_blank')}
+                    >
+                      Inquire Now
+                    </Button>
                   </div>
                 </div>
                 <div className="p-4">

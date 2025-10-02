@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 import stilovoLogo from '@/assets/stilovo-logo.png';
 
 const Footer = () => {
@@ -19,12 +19,6 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
-                className="w-10 h-10 bg-brand-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:text-brand-black transition-smooth"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
                 href="https://www.instagram.com/stilovo.slg/" 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,10 +27,20 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/stilovo-modern-furniture" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-brand-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:text-brand-black transition-smooth"
               >
-                <Twitter className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://wa.me/919609646000" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-brand-white/10 rounded-full flex items-center justify-center hover:bg-brand-accent hover:text-brand-black transition-smooth"
+              >
+                <MessageCircle className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -80,7 +84,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-brand-accent mt-0.5 flex-shrink-0" />
                 <div className="text-brand-white/80 text-sm leading-relaxed">
-                  SevokeRoad, 2nd Floor<br />
+                  Sevoke Road, 2nd Floor<br />
                   Tata Motors Rangeet Auto<br />
                   Near Vega Mall<br />
                   Siliguri 734008
