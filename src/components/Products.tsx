@@ -56,7 +56,7 @@ import decor5 from '@/assets/decor-5.jpg';
 import decor6 from '@/assets/decor-6.jpg';
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Sectional Sofas');
+  const [selectedCategory, setSelectedCategory] = useState('Sofas & Seating');
 
   const categories = ['Sofas & Seating', 'Dining Tables', 'Home Decor', 'Rugs & Carpets', 'Beds & Mattresses', 'Wardrobes', 'Bar Furniture', 'Office Furniture', 'Furnishings'];
 
