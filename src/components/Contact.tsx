@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 import {
   Form,
   FormControl,
@@ -39,19 +40,28 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (data: FormData) => {
-    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(data.name)}%0A*Phone:* ${encodeURIComponent(data.phone)}%0A*Email:* ${encodeURIComponent(data.email)}%0A*Subject:* ${encodeURIComponent(data.subject)}%0A%0A*Message:*%0A${encodeURIComponent(data.message)}`;
-    
-    const whatsappUrl = `https://wa.me/919609646000?text=${whatsappMessage}`;
-    
-    window.open(whatsappUrl, '_blank');
-    
-    toast({
-      title: 'Message prepared!',
-      description: 'Your message has been opened in WhatsApp.',
-    });
-    
-    form.reset();
+  const onSubmit = async (data: FormData) => {
+    try {
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: data,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: 'Message sent!',
+        description: 'We\'ll get back to you as soon as possible.',
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast({
+        title: 'Error',
+        description: 'Failed to send message. Please try again.',
+        variant: 'destructive',
+      });
+    }
   };
   return (
     <section id="contact" className="py-24 bg-secondary">
